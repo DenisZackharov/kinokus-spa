@@ -1,0 +1,12 @@
+.movie-poster {
+  padding: 10px;
+}
+
+/* Стиль постера (картинка) */
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px; /* Немного скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+}

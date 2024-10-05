@@ -1,0 +1,53 @@
+/* Контейнер для страницы фильма */
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Стили для блока с постером */
+.movie-poster {
+  flex: 0 0 300px;
+  margin-right: 20px;
+}
+
+.movie-poster img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для блока с описанием фильма */
+.movie-details {
+  flex: 1;
+  color: #333;
+}
+
+/* Стили для заголовка фильма */
+.movie-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Стили для описания */
+.movie-description,
+.movie-annotation,
+.movie-duration,
+.movie-release {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Стили для выделения тегов <strong> */
+strong {
+  color: #555;
+}

@@ -1,0 +1,52 @@
+/* Основной контейнер для списка фильмов */
+.movies-list__container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movies-list__header {
+  width: fit-content;
+  margin: 16px auto;
+}
+
+/* Каждый элемент списка фильмов */
+.movies-list__item {
+  display: flex;
+  justify-content: space-between; /* Текст слева, постер справа */
+  align-items: center; /* Выравнивание текста и постера по центру */
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Контейнер с информацией о фильме (название и описание) */
+.movie-info {
+  flex: 1; /* Занимает все доступное пространство слева */
+  padding-right: 20px; /* Отступ справа от текста, чтобы не прилипал к постеру */
+}
+
+/* Название фильма */
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+/* Описание фильма */
+.movie-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.movie-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.movie-link:hover {
+  text-decoration: underline;
+}
