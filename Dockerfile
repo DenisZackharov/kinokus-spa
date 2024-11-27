@@ -13,6 +13,11 @@ RUN npm install
 # Копировать остальные файлы приложения
 COPY . ./
 
+ARG REACT_APP_API_HOST=/backend
+ENV REACT_APP_API_HOST=$REACT_APP_API_HOST
+ARG PORT=5000
+ENV PORT=$PORT
+
 # Собрать приложение
 RUN npm run build
 
